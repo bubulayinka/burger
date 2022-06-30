@@ -1,0 +1,452 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --red: #ff514b;
+    --yellow: #ffba26;
+    --green: #00cf52;
+    --greybg: #f8f9fd;
+    --boldblack: #080808;
+    --lightblack: #ababab;
+    --pinkbg: #f6ecec;
+}
+.main-container{
+    display: flex;
+   overflow: hidden;
+
+}
+.side-bar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 240px;
+}
+.main-content{
+    top: 0;
+    bottom: 0;
+    left: 240px;
+    position: relative;
+    flex: 1;
+    background: var(--greybg);
+    padding: 5px;
+    
+}
+header{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+   background: white;
+   height: 90px;
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 240px;
+   
+}
+.main-right-big{
+   
+   display: flex;
+   margin-top: 90px;
+   
+}
+.pop-main{
+  width: calc(100vw - 500px);
+}
+
+.pop-up{
+    background: white;
+    position: fixed;
+    top: 95px;
+    bottom: 0;
+    width: 250px;
+    right: 0px;
+    
+    
+}
+.logo{
+    border-right: 2px solid var(--greybg);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--greybg);
+}
+.foodyoow{
+    display: flex;
+    align-items: center;
+    
+}
+.food h3{
+    color: var(--boldblack);
+    font-size: 1.1rem;
+    margin-bottom: 0px;
+}
+.food p{
+    color: var(--lightblack);
+}
+.logo-img{
+    margin-right: 10px;
+}
+.logo-img i{
+    font-size: 36px;
+    color: var(--red);
+}
+.c-less{
+    background: var(--greybg);
+    padding: 10px 3px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.c-less i{
+    font-size: 20px;
+}
+.menu-filter-burger{
+    padding: 20px 10px;
+    border-bottom: 2px solid var(--greybg);
+    
+}
+.menu-filter{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-filter{
+    margin-top: -30px;
+    padding-right: 10px;
+    color: var(--lightblack);
+}
+.menubur p{
+    font-size: 1rem;
+    color: var(--lightblack);
+}
+.menubur h2{
+    margin-top: 0px;
+    font-size: 1.1rem;
+    color: var(--boldblack);
+}
+.dashboard{
+    padding: 10px 10px;
+    color: var(--lightblack);
+    font-size: .8rem;
+}
+.menu-dashboard{
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 20px;
+   align-items: center;
+}
+.menus li{
+    margin-bottom: 5px;
+    padding: 5px 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.menus li:hover{
+    border-left: 1px solid var(--red);
+    color: var(--red);
+}
+.menus li a:hover{
+    color: var(--red);
+}
+.menus li a{
+    text-decoration: none;
+    color: var(--lightblack);
+    margin-left: 5px;
+}
+.new{
+    border: none;
+    padding: 1px 5px;
+    background: var(--pinkbg);
+    color: var(--red);
+    font-size: .6rem !important;
+}
+.board1{
+    border-bottom: 2px solid var(--greybg);
+}
+.source{
+    background: var(--greybg);
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    right: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    font-size: .8rem;
+}
+.source1{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.source2{
+    background: white;
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 0px;
+    border-radius: 5px;
+}
+.search-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-menu{
+    border-radius: 5px;
+    padding: 10px 0px;
+    max-width: 300px;
+    width: 100%;
+    background: var(--greybg);
+    display: flex;
+    justify-content: space-between;
+}
+.menu-bx{
+    display: flex;
+    font-size: 1rem;
+    padding-left: 20px;
+    color: var(--lightblack);
+}
+.menu-bx i{
+    padding-right: 5px;
+    font-size: 1.2rem;
+}
+.cancel{
+    background: white;
+    padding: 3px 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cancel i{
+    font-size: 1.1rem;
+}
+.note-share{
+    color: var(--lightblack);
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    font-size: 1rem;
+    padding: 0px 0px;
+    align-items: center;
+    font-size: .8rem;
+}
+.note-share i{
+    margin-right: 2px;
+    font-size: 1rem;
+}
+.chatmenu{
+    display: flex;
+    padding: 0px 5px;
+}
+.chart{
+    display: flex;
+    margin: 0 5px;
+}
+.menu{
+    display: flex;
+    margin: 0 5px;
+}
+.share{
+    display: flex;
+    margin: 0 20px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--lightblack);
+}
+.note{
+    display: flex;
+    padding: 10px 10px;
+    background: var(--pinkbg);
+    color: var(--red);
+    border-radius: 5PX;
+    
+    
+}
+.share-not{
+    display: flex;
+
+
+}
+.first-sec{
+    width: 100%;
+    background: white;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: inset -15px -6px 20px var(--greybg);
+}
+.first-sec-sign{
+    display: flex;
+    align-items: center;
+}
+.first-sec-sign i{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--lightblack);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    color: var(--lightblack);
+}
+.hamdis h2{
+    font-size: 1.2rem;
+    color: var(--boldblack);
+    margin-left: 15px;
+}
+.hamdis p{
+    margin-left: 15px;
+    color: var(--lightblack);
+    font-size: .6rem;
+}
+.first-sec-menu-food{
+    display: flex;
+
+}
+.first-sec-menu-food p{
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    color: var(--lightblack);
+    font-size: 1rem;
+}
+.first-sec-menu-food i{
+    font-size: 1.5rem;
+}
+.hambuger-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding:10px 0px;
+    padding-right: 20px;
+    box-shadow: inset -15px -6px 50px var(--greybg);
+    z-index: 999;
+}
+.burger-grid{
+    background: white;
+    padding:40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+.burger-grid h3{
+    font-size: .6rem;
+    margin-top: 5px;
+    color: var(--boldblack);
+}
+.burger-grid p{
+    color: var(--red);
+    margin-top: 5px;
+    font-size: .6rem;
+}
+.second-sec-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.second-sec-text p{
+    color: var(--lightblack);
+    margin-top: 5px;
+}
+.orders{
+    padding: 20px 10px;
+}
+.order-show{
+    background: var(--greybg);
+    margin-bottom: 5px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.first-sec-sign i{
+    font-size: .7rem;
+}
+.order-text{ 
+    display: flex;
+}
+.order-text h3{
+    color: var(--boldblack);
+    font-size: .8rem;
+    margin-bottom: 0px;
+}
+.order-text img{
+    margin-right: 10px;
+}
+.order-text p{
+    color: var(--red);
+    font-size: .6rem;
+}
+.bxs-up-arrow-square{
+    color: var(--red);
+}
+.main-right-small{
+    height: 100vh ;
+    display: flex;
+    flex-direction: column;
+}
+.bill{
+    
+    padding: 0px 10px;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    bottom: 0;
+    font-size: .8rem;
+}
+.subtotal{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    color: var(--lightblack);
+}
+.tax{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: var(--lightblack);
+}
+.total{
+    border-top: 1px dotted var(--lightblack);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    font-weight: 900;
+}
+.print-bill{
+    width: 100%;
+    padding: 7px 5px;
+    border: none;
+    background: var(--red);
+    color: white;
+    margin-bottom: 5px;
+}
